@@ -1,0 +1,121 @@
+.numbers {
+    width: 100%;
+    background-image: url('/images/counter-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.test {
+    position: absolute;
+    top: 60%;
+    left: 0;
+}
+.grid {
+    width: 88%;
+    height: 66%;
+    display: flex;
+    justify-content: space-between;
+}
+.grid  span {
+    color: #FFB703;
+}
+.grid h2 {
+    line-height: 1.40;
+    font-size: 35px;
+    margin-top: 25px;
+}
+.grid > div p {
+    margin: 25px 0;
+}
+.grid button {
+    background-color: #FFB703;
+    padding: 20px 30px;
+    font-weight: bolder;
+    font-size: 16.5px;
+    margin-top: 25px;
+    color: black;
+}
+.grid > div:nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+}
+.grid > div:nth-child(2) > div {
+    background: #FFB7031F;
+    clip-path: polygon(15% 0%, 100% 0, 100% 20%, 100% 74%, 85% 100%, 0 100%, 0% 80%, 0% 25%);
+    width: 48%;
+    height: 43%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-left: 25px;
+}
+.grid > div:nth-child(2) > div span:nth-child(1) {
+    color:#FFB703;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.grid > div:nth-child(2) > div span:nth-child(2) {
+    color: white;
+}
+@media screen and (max-width:1084px) {
+    .grid {
+        height:45%;
+        width: 70%;
+        flex-flow: row wrap;
+        transform: translateY(-210px);
+    }
+    .numbers {
+        height: 1200px;
+    }
+    .grid > div {
+        flex: 100%;
+        margin: 40px 0;
+    }
+}
+@media screen and (max-width:649px) {
+    .grid {
+        width: 85%;
+    }
+}
+@media screen and (max-width:496px) {
+    .grid {
+        width: 88%;
+        height: 54%;
+    }
+    .numbers {
+        height: 1600px;
+        background-position: bottom;
+    }
+    .grid > div:nth-child(2) > div  {
+        flex:100%;
+    }
+    .grid > div:nth-child(2) {
+        height: 45%;
+        
+    }
+    .grid > div:nth-child(2) > div {
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width:380px) {
+    .grid {
+        width: 90%;
+    }
+    .grid > div:nth-child(2) {
+        height: 40%;
+    }
+    .numbers {
+        height: 1600px;
+    }
+
+}
