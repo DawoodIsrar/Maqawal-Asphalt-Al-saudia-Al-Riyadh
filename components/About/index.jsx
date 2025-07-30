@@ -23,7 +23,7 @@ const About = () => {
   }, [inView]);
 
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div ref={ref} className={styles.test}></div>
       <div className={styles.cards}>
         <div>
@@ -158,13 +158,16 @@ const About = () => {
                 </div>
                 <div>
                   <i className="fa-solid fa-circle-check"></i>
-                  &nbsp;&nbsp; أعمال البناء والتشييد
+                  &nbsp;&nbsp; أعمال البناء والتشييد&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
               </div>
             </div>
             <div>
 
-            <button>KNOW MORE</button>
+            <button onClick={() => {
+    const section = document.getElementById("services");
+    section?.scrollIntoView({ behavior: "smooth" });
+  }}  style={{cursor:"pointer"}} >اعرف المزيد</button>
             </div>
           </div>
         </div>

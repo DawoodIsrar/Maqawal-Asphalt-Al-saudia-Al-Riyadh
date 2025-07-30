@@ -115,6 +115,7 @@
     height: fit-content;
 }
 .copyright ul li {
+  cursor: pointer;
     display: inline-block !important;
     text-decoration: none;
     display: flex;

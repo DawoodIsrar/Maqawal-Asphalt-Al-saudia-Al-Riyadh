@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Link from "next/link";
 import styles from "./index.module.css";
 import icon1 from "../../public/images/1.png";
@@ -6,75 +7,146 @@ import icon3 from "../../public/images/3.png";
 import Image from "next/image";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    website: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [response, setResponse] = useState(null);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setResponse(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+      setResponse(result.message || "تم الإرسال بنجاح!");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        website: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error(err);
+      setResponse("حدث خطأ أثناء الإرسال.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className={styles.contact}>
       <div className={styles.hero}>
         <div className={styles.caption}>
           <div className={styles.line}></div>
           <div>
-            <h2>Contact Us</h2>
+            <h2>تواصل معنا</h2>
           </div>
           <div>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
-              porro quisquam repudiandae explicabo aliquid quod odit aperiam
-              saepe eligendi quos.
+              نحن في مقاول أسفلت السعودية الرياض نقدم أفضل خدمات الأسفلت والإنشاءات العامة في جميع أنحاء الرياض. اتصل بنا الآن للحصول على استشارة مجانية أو لمناقشة مشروعك القادم مع فريقنا المتخصص ذو الخبرة العالية في تنفيذ المشاريع بأعلى جودة واحترافية
             </p>
           </div>
           <div className={styles.copyrights}>
-            <div>
-              <Link href={`/`}>Home</Link>
-            </div>
-            <div>
-              <i className="fas fa-circle"></i>
-            </div>
-            <div>
-              <Link href={`/contact`}>Contact</Link>
-            </div>
+            <div><Link href={`/`}>الرئيسية</Link></div>
+            <div><i className="fas fa-circle"></i></div>
+            <div><Link href={`/contact`}>تواصل معنا</Link></div>
           </div>
         </div>
       </div>
+
       <div className={styles.maps}>
         <div>
           <div className="google-map-code">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282225.79979123!2d73.7250245393691!3d20.750301298393563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1587818542745!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.494718907741!2d46.67529581500263!3d24.713551984114854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038a4f1c7b6b%3A0x8dbf1145fd3c1c0e!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1711804726956"
               width="100%"
               height="550"
-              frameborder="0"
+              frameBorder="0"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullScreen=""
               aria-hidden="false"
-              tabindex="0"
+              tabIndex="0"
             ></iframe>
           </div>
         </div>
         <div>
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <div className={styles.line}></div>
-            <h1>Get in touch</h1>
+            <h1>تواصل معنا</h1>
             <div className={styles.formGroup}>
-              <input placeholder="Name" type="text" />
-              <input placeholder="Email" type="text" />
+              <input
+                placeholder="الاسم"
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                placeholder="البريد الإلكتروني"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
             </div>
             <div className={styles.formGroup}>
-              <input placeholder="Phone Number" type="text" />
-              <input placeholder="Your Website" type="text" />
+              <input
+                placeholder="رقم الهاتف"
+                type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+              />
+              <input
+                placeholder="موقعك الإلكتروني"
+                type="text"
+                name="website"
+                value={formData.website}
+                onChange={handleChange}
+              />
             </div>
             <textarea
-              placeholder="Your Message Here"
-              name=""
-              id=""
-              cols="30"
-              rows="30"
+              placeholder="رسالتك هنا"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="6"
+              required
             ></textarea>
-            <button className={styles.btn} type="submit">
-              SUBMIT NOW
+            <button className={styles.btn} type="submit" disabled={loading}>
+              {loading ? "جارٍ الإرسال..." : "أرسل الآن"}
             </button>
+            {response && <p style={{ marginTop: 10 }}>{response}</p>}
           </form>
         </div>
         <div></div>
       </div>
+
       <div className={styles.cards}>
         <div>
           <div className={styles.icons}>
@@ -88,9 +160,7 @@ const Contact = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <h2>
-            <strong>Office Address</strong>
-          </h2>
+          <h2><strong>Office Address</strong></h2>
           <div>
             <p>Ta-134/A, Gulshan Badda <br /> Link Rd, Dhaka</p>
           </div>
@@ -107,11 +177,9 @@ const Contact = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <h2>
-            <strong>Email us</strong>
-          </h2>
+          <h2><strong>Email us</strong></h2>
           <div>
-            <p>mosesnwigberi@gmail.com <br /> moses@icloud.com</p>
+            <p>dawoodisrar@gmail.com <br /> dawoodisrar@gmail.com</p>
           </div>
         </div>
         <div>
@@ -126,9 +194,7 @@ const Contact = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <h2>
-            <strong>Call us</strong>
-          </h2>
+          <h2><strong>Call us</strong></h2>
           <div>
             <p>(+234) 807 548-9362 <br /> (+234) 807 548-9362</p>
           </div>

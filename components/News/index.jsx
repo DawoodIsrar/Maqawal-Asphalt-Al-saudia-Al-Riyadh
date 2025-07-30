@@ -3,7 +3,10 @@ import Image from "next/image";
 import worker from "../../public/images/1.jpeg";
 import worker2 from "../../public/images/22.jpeg";
 import worker3 from "../../public/images/3.jpeg";
+import { useRouter } from "next/router";
+
 const News = () => {
+   const router = useRouter();
   return (
     <div className={styles.news}>
       <div className={styles.title}>
@@ -102,7 +105,9 @@ const News = () => {
            نحن هنا لنساعدك في تحويل رؤيتك إلى واقع، من خلال خبراتنا في أعمال الأسفلت والمقاولات العامة
 نُطبق استراتيجيات متطورة ونهجًا تعاونيًا لضمان تنفيذ المشاريع بأعلى جودة وفي الوقت المحدد
           </p>
-          <button>GET STARTED</button>
+          <button style={{cursor:"pointer"}}  onClick={() => {
+        router.push('/contact');
+      }}>ابدأ الآن</button>
         </div>
       </div>
     </div>

@@ -112,7 +112,10 @@ const Numbers = () => {
            خبرتنا، مشاريعنا، ورضا عملائنا دليل على التزامنا بالجودة
           </h2>
           <p></p>
-          <button>CONTACT NOW</button>
+          <button onClick={() => {
+    const section = document.getElementById("home-contact");
+    section?.scrollIntoView({ behavior: "smooth" });
+  }} style={{cursor:"pointer"}}>اتصل الآن</button>
         </div>
         <div>
           <div>

@@ -77,7 +77,7 @@ const Products = () => {
   
   };
   return (
-    <div className={styles.products}>
+    <div className={styles.products} id="services">
       <div ref={container} className={styles.caption}>
         <b> ماذا نقدم؟</b>
         <h2>نُطور حلولاً شاملة لكل مشروع لضمان النجاح والجودة في كل مرحلة</h2>
