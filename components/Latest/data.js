@@ -1,40 +1,41 @@
-import worker from "../../public/images/one.jpeg";
-import worker2 from "../../public/images/two.jpeg";
-import worker3 from "../../public/images/three.jpeg";
-import worker4 from "../../public/images/four.jpeg";
-import worker5 from "../../public/images/five.jpeg";
-import worker6 from "../../public/images/six.jpeg";
+import worker from "../../public/images/asphalt1.jpeg";
+import worker2 from "../../public/images/asphalt2.jpeg";
+import worker3 from "../../public/images/asphalt4.jpeg";
+import worker4 from "../../public/images/floring.jpeg";
+import worker5 from "../../public/images/floring1.jpeg";
+import worker6 from "../../public/images/floring2.jpeg";
 
 const data = [
   {
     img: worker,
-    title: "General Construction",
-    category: "house renovation",
+    title: "رصف الأسفلت",
+    category: "أعمال الأسفلت",
   },
   {
     img: worker2,
-    title: "Proper Maintenance",
-    category: "house & exterior",
+    title: "بناء الطرق",
+    category: "أعمال الأسفلت",
   },
   {
     img: worker3,
-    title: "Project Management",
-    category: "house renovation",
+    title: "أعمال الأرصفة والواجهات الخارجية",
+    category: "أعمال الأسفلت",
   },
   {
     img: worker4,
-    title: "Virtual design & build",
-    category: "house & exterior",
+    title: "أرضيات إيبوكسي ملونة",
+    category: "أرضيات خرسانية ديكورية",
   },
   {
     img: worker5,
-    title: "Preconstruction",
-    category: "interiors",
+    title: "أرضيات خرسانية ديكورية",
+    category: "أرضيات خرسانية ديكورية",
   },
   {
     img: worker6,
-    title: "Design build",
-    category: "interiors",
+    title: "تجديد وترميم المنازل",
+    category: "أرضيات إيبوكسي ملونة",
   },
 ];
+
 export default data;

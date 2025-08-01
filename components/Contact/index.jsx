@@ -144,8 +144,10 @@ const Contact = () => {
             </div>
             <span>
               <strong>راسلنا عبر البريد الإلكتروني</strong> <br /> <br />
-              <p>dawoodisrar@gmail.com,</p>
-              <p>dawoodisrar@gmail.com</p>
+              <p> <a href="mailto:attaullah94@gmail.com" className="text-blue-600 underline" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+    attaullah94@gmail.com
+  </a></p>
+              <p></p>
             </span>
           </div>
           <div>
@@ -161,8 +163,12 @@ const Contact = () => {
             </div>
             <span>
               <strong>اتصل بنا</strong> <br /> <br />
-              <p>(+234) 807-548-9362,</p>
-              <p>(+234) 589-8745</p>
+              <p><a href="tel:0596957440" className="text-blue-600 underline">
+    0596957440
+  </a> ,</p>
+              <p><a href="tel:0596957440" className="text-blue-600 underline">
+    0505215846
+  </a> </p>
             </span>
           </div>
         </div>

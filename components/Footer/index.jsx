@@ -97,7 +97,11 @@ const Footer = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div>(+234) 807 548 9362,  (+880) 155 69569 366</div>
+            <div><a href="tel:0596957440" className="text-blue-600 underline">
+    0596957440
+  </a>,  <a href="tel:0596957440" className="text-blue-600 underline">
+    0505215846
+  </a></div>
           </div>
           <div>
             <div style={{width:'50px'}}>
@@ -111,7 +115,9 @@ const Footer = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div>dawoodisrar@gmail.com, engineerdawoodisrar@gmail.com</div>
+            <div> <a href="mailto:attaullah94@gmail.com" className="text-blue-600 underline" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+    attaullah94@gmail.com
+  </a>                 </div>
           </div>
         </div>
         <div>

@@ -145,9 +145,14 @@ const Hero = () => {
                       <h1>
                        والبناء المتين في الرياض والمملكة العربية السعودية  <br />  نُنفذ مشاريع الأسفلت
                       </h1>
+                      <h2 className="text-center text-2xl md:text-4xl font-bold leading-snug">
+  Asphalt and Solid Construction in Riyadh and Saudi Arabia <br />
+  We Execute Asphalt Projects
+</h2>
                       <p>
                        مهما كان موقع مشروعك أو نوعه، نُوفر لك الخبراء المناسبين لتحقيق أهدافك بثقة وقيمة مضافة.
                       </p>
+                      <p>From planning to execution, we deliver reliable asphalt and construction solutions tailored to your project’s needs.</p>
 
                       <Link href={'/contact'}><button>اكتشف المزيد </button></Link>
                     </motion.div>
@@ -183,9 +188,13 @@ const Hero = () => {
                     <h1>
                          نُنفذ مشاريع الأسفلت  والبناء المتين في الرياض والمملكة العربية السعودية  
                       </h1>
+                      <h2>Delivering Excellence in Asphalt & Construction Across Riyadh and Saudi Arabia</h2>
                       <p>
                        مهما كان موقع مشروعك أو نوعه، نُوفر لك الخبراء المناسبين لتحقيق أهدافك بثقة وقيمة مضافة
                       </p>
+                       <p className="mt-4 max-w-xl mx-auto">
+    Wherever your project is located or whatever its type, we provide the right experts to deliver results with confidence and added value.
+  </p>
 
                     <Link href={'/contact'}><button>اكتشف المزيد </button></Link>
                   </motion.div>

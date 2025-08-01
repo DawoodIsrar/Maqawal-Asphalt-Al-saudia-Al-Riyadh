@@ -58,7 +58,11 @@ const Header = () => {
       {/* Contact Row */}
       <div ref={headerRef} style={{ display: "flex" }} className={styles.headerOne}>
         <div>
-          <div><i className="fa fa-envelope"></i> dawoodisrar@gmail.com &nbsp;&nbsp;|</div>
+          <div><i className="fa fa-envelope"></i>  <a href="mailto:attaullah94@gmail.com" className="text-blue-600 underline" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+    <a href="mailto:attaullah94@gmail.com" className="text-blue-600 underline" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+    attaullah94@gmail.com
+  </a>
+  </a> &nbsp;&nbsp;|</div>
           <div><i className="fa fa-phone"></i> (+1) 7854-333-222 &nbsp;&nbsp;|</div>
           <div><i className="fa fa-marker"></i> 31 New Street, Al-riyadh, Saudi Arabia &nbsp;&nbsp;|</div>
         </div>

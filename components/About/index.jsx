@@ -3,6 +3,7 @@ import Image from "next/image";
 import man from "../../public/images/about.png";
 import abzt from "../../public/images/abzt.jpeg";
 import shape from "../../public/images/shape-1.png";
+import Attaullah from "../../public/images/At1.jpeg"
 import one1 from "../../public/images/one1.png";
 import one2 from "../../public/images/one2.png";
 import one3 from "../../public/images/one3.png";
@@ -101,7 +102,7 @@ const About = () => {
           className={visible ? `${styles.man} ${styles.animClass}` : styles.man}
         >
           <Image
-            src={man}
+            src={Attaullah}
             objectFit="cover"
             alt="card-image"
             layout="fill"
@@ -134,6 +135,13 @@ const About = () => {
             نحن شركة مقاولات أسفلت وبناء مقرها الرياض، نُقدم حلولاً متكاملة تُركز على الجودة والاستدامة.
 نعتمد على أُطر عمل مرنة ونهج استراتيجي لتطوير المشاريع وتحقيق التعاون الفعّال بين الفرق التنفيذية، مما يُعزز من تمكين العملاء وتحقيق نتائج ملموسة.
           </p>
+            <p className="text-left text-sm text-gray-600">
+    We are a leading <strong>asphalt and construction company based in Riyadh, Saudi Arabia</strong>,
+    offering end-to-end solutions for infrastructure, roadwork, and civil construction projects.
+    Our team of expert <strong>asphalt contractors in Riyadh</strong> specializes in durable road paving,
+    site development, and project management. Contact us for reliable <strong>construction services</strong>
+    across the Kingdom.
+  </p>
           <div className={styles.abzt}>
             <div>
               <Image

@@ -10,11 +10,10 @@ const Latest = () => {
   const [active, setActive] = useState("ALL");
   const title = useRef(null);
   const filter = [
-    "ALL",
-    "ARCHITECTURE",
-    "INTERIORS",
-    "HOUSE & EXTERIOR",
-    "HOUSE RENOVATION",
+    "الكل",
+    "أعمال الأسفلت",
+    "أرضيات خرسانية ديكورية",
+    "أرضيات إيبوكسي ملونة",
   ];
 
   const handleFilter = (category, current) => {
@@ -32,7 +31,7 @@ const Latest = () => {
     setActive(category);
     setDisplayData([]);
 
-    if (category === "all") {
+    if (category === "الكل") {
       setDisplayData(data);
       return;
     }
@@ -90,8 +89,8 @@ const Latest = () => {
   return (
     <div className={styles.products}>
       <div ref={container} className={styles.caption}>
-        <b>PROJECTS</b>
-        <h2>Latest completed projects</h2>
+        <b>المشاريع</b>
+        <h2>آخر المشاريع المنجزة</h2>
 
         <div ref={title} className={styles.tile}>
           {filter.map((x, i) => (
@@ -123,7 +122,7 @@ const Latest = () => {
               />
               <div className={styles.tab}>
                 <span>
-                  Blue Glass Building <br />
+                 {x.title} <br />
                   <span style={{ fontWeight: "lighter" }}> {x.category}</span>
                 </span>
 

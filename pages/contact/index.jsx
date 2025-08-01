@@ -179,7 +179,9 @@ const Contact = () => {
           </div>
           <h2><strong>Email us</strong></h2>
           <div>
-            <p>dawoodisrar@gmail.com <br /> dawoodisrar@gmail.com</p>
+            <a href="mailto:attaullah94@gmail.com" className="text-blue-600 underline" style={{ textDecoration: 'none', cursor: 'pointer' }}>
+    attaullah94@gmail.com
+  </a>
           </div>
         </div>
         <div>
@@ -196,7 +198,11 @@ const Contact = () => {
           </div>
           <h2><strong>Call us</strong></h2>
           <div>
-            <p>(+234) 807 548-9362 <br /> (+234) 807 548-9362</p>
+            <p>  <a href="tel:0596957440" className="text-blue-600 underline">
+    0596957440
+  </a> <br />   <a href="tel:0596957440" className="text-blue-600 underline">
+    0505215846
+  </a></p>
           </div>
         </div>
       </div>

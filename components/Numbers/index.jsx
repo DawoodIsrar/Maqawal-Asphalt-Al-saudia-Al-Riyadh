@@ -111,6 +111,13 @@ const Numbers = () => {
            نُحول رؤيتك إلى واقع ملموس <br/>
            خبرتنا، مشاريعنا، ورضا عملائنا دليل على التزامنا بالجودة
           </h2>
+          <p className="text-left text-sm text-gray-600">
+  We are a trusted <strong>asphalt and construction company in Riyadh, Saudi Arabia</strong>,<br/>
+  delivering comprehensive solutions for <strong>roadwork, infrastructure development</strong>, and<br/>
+  <strong>civil construction</strong>. Our skilled team of <strong>Riyadh asphalt contractors</strong>
+  ensures<br/> high-quality project delivery, from road paving and excavation to structural work. <br/> Reach out to us
+  for professional <strong>construction and asphalt services</strong> across the Kingdom.
+</p>
           <p></p>
           <button onClick={() => {
     const section = document.getElementById("home-contact");

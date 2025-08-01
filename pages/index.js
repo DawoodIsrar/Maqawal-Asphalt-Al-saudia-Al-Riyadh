@@ -30,7 +30,7 @@ export default function Home() {
         <Choose />
         <Reviews />
         <Contact />
-        <News />
+        {/* <News /> */}
       </main>
     </>
   )

@@ -105,8 +105,8 @@ const Reviews = () => {
       <div className={styles.grid}>
         <div>
           <div className={styles.title}>
-            <span>TESTIMONIALS</span>
-            <h2 ref={test}>Our client reviews.</h2>
+            <span>آراء العملاء</span>
+            <h2 ref={test}>تقييمات عملائنا</h2>
             <div className={styles.buttons}>
               <div onClick={() => nextPrev("prev")}>&larr;</div>
               <div onClick={() => nextPrev("next")}>&rarr;</div>
@@ -188,8 +188,8 @@ const Reviews = () => {
 
         <div>
           <div className={styles.title}>
-            <span>TEAM MEMBERS</span>
-            <h2>Expert team members.</h2>
+            <span>أعضاء الفريق</span>
+            <h2>فريق من الخبراء المتخصصين</h2>
             <div style={{ bottom: "21px" }} className={styles.buttons}>
               <div onClick={() => scrollAction("up")}>&larr;</div>
               <div onClick={() => scrollAction("down")}>&rarr;</div>
