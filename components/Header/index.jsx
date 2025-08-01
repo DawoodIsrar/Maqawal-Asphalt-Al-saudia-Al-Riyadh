@@ -63,7 +63,12 @@ const Header = () => {
     attaullah94@gmail.com
   </a>
   </a> &nbsp;&nbsp;|</div>
-          <div><i className="fa fa-phone"></i> (+1) 7854-333-222 &nbsp;&nbsp;|</div>
+          <div style={{display:"flex"}}><i className="fa fa-phone"></i> <p><a href="tel:0596957440" className="text-blue-600 underline">
+    0596957440
+  </a> ,</p>
+              <p><a href="tel:0596957440" className="text-blue-600 underline">
+    0505215846
+  </a> </p> &nbsp;&nbsp;|</div>
           <div><i className="fa fa-marker"></i> 31 New Street, Al-riyadh, Saudi Arabia &nbsp;&nbsp;|</div>
         </div>
         <div>
@@ -102,7 +107,7 @@ const Header = () => {
         </div>
 
         <div className={styles.search}>
-          <div><i className="fa-solid fa-magnifying-glass"></i></div>
+          {/* <div><i className="fa-solid fa-magnifying-glass"></i></div> */}
           <div className="lets-talk">دعنا نتحدث</div>
         </div>
 
