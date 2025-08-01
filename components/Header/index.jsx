@@ -105,11 +105,14 @@ const Header = () => {
               <li><Link href="/">الصفحة الرئيسية</Link></li>
             </ul>
         </div>
-
-        <div className={styles.search}>
+       <Link href="/contact"> 
+        <div className={styles.search}
+        >
           {/* <div><i className="fa-solid fa-magnifying-glass"></i></div> */}
-          <div className="lets-talk">دعنا نتحدث</div>
+          <div className="lets-talk"
+          >دعنا نتحدث</div>
         </div>
+        </Link>
 
         {/* Hamburger Icon */}
         <div className={styles.bars} onClick={show}>

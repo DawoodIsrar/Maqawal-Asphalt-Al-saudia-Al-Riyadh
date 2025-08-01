@@ -18,7 +18,7 @@ const Hero = () => {
   const divStyle = {
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "700px",
+    height: "100vh",
   };
   const slideImages = [
     {

@@ -23,7 +23,7 @@
   background-color: white;
   display: flex;
   flex-flow: row wrap;
-  margin-top: -150px;
+  margin-top: -80px;
   margin-bottom: 120px;
   z-index: 999;
   transition: 0.5s;
@@ -193,6 +193,7 @@
   .cards {
     width: 80%;
     /* margin-bottom:750px; */
+    margin-top: 0px;
     box-shadow: 5px 9px 15px 0 rgba(143, 143, 143, 0.2),
       2.5px -9px 35px 0 rgba(143, 143, 143, 0.2);
   }

@@ -75,7 +75,7 @@
         transform: translateY(-210px);
     }
     .numbers {
-        height: 1200px;
+        height: 2000px;
     }
     .grid > div {
         flex: 100%;
@@ -93,7 +93,7 @@
         height: 54%;
     }
     .numbers {
-        height: 1600px;
+        height: 2000px;
         background-position: bottom;
     }
     .grid > div:nth-child(2) > div  {
@@ -115,7 +115,7 @@
         height: 40%;
     }
     .numbers {
-        height: 1600px;
+        height: 2000px;
     }
 
 }
