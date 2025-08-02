@@ -1,5 +1,5 @@
 
-const ContactButtons = () => {
+const Call = () => {
   return (
     <>
       <div className="floating-buttons">
@@ -90,4 +90,4 @@ const ContactButtons = () => {
   );
 };
 
-export default ContactButtons;
+export default Call;

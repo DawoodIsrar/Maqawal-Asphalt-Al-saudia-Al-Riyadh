@@ -8,7 +8,7 @@ import Latest from '../components/Latest'
 import Numbers from '../components/Numbers'
 import Products from '../components/Projects'
 import Reviews from '../components/Reviews'
-import ContactButtons from '../components/Contactbuttons/index.jsx'
+import ContactButtons from '../components/Call'
 
 
 export default function Home() {
