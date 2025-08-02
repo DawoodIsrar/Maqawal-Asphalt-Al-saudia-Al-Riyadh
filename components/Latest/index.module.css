@@ -5,7 +5,7 @@
     padding: 10px;
     padding-top: 60px;
     min-height: auto;
-    max-height:1200px;
+    /* max-height:1200px; */
     padding-bottom: 90px;
     font-size: 19px;
     position: relative;
@@ -200,13 +200,13 @@
 @media screen and (max-width:830px) {
     .grid {
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 @media screen and (max-width:744px) {
     .grid {
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
     } 
     .grid > div {
         width: 325px;

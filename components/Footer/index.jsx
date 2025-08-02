@@ -82,7 +82,7 @@ const Footer = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div>Ta-134/A, Gulshan Badda Link Rd, Saudi Arabia</div>
+            <div>2887-2939 Khaima umm Muabad, Manfouhah Al Jadidah, Riyadh 12653</div>
           </div>
 
           <div>

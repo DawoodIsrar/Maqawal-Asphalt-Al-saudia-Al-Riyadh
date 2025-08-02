@@ -10,6 +10,7 @@ import News from '../components/News'
 import Numbers from '../components/Numbers'
 import Products from '../components/Projects'
 import Reviews from '../components/Reviews'
+import ContactButtons from '../components/Contactbuttons'
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <Choose />
         <Reviews />
         <Contact />
+        <ContactButtons/>
         {/* <News /> */}
       </main>
     </>

@@ -127,8 +127,8 @@ const Contact = () => {
             </div>
             <span>
               <strong>SAUDI ARABIA OFFICE</strong> <br /> <br />
-              <p>55, Abakaliki road,</p>
-              <p>Al riyadh, Saudi Arabia</p>
+              <p>2887-2939 Khaima umm Muabad,</p>
+              <p>Manfouhah Al Jadidah, Riyadh 12653</p>
             </span>
           </div>
           <div>

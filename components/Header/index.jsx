@@ -69,7 +69,7 @@ const Header = () => {
               <p><a href="tel:0596957440" className="text-blue-600 underline">
     0505215846
   </a> </p> &nbsp;&nbsp;|</div>
-          <div><i className="fa fa-marker"></i> 31 New Street, Al-riyadh, Saudi Arabia &nbsp;&nbsp;|</div>
+          <div><i className="fa fa-marker"></i> 2887-2939 Khaima umm Muabad, Manfouhah Al Jadidah, Riyadh 12653 &nbsp;&nbsp;|</div>
         </div>
         <div>
           <div>

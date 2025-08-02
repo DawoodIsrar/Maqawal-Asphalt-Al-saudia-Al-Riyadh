@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from "react";
 
 const Latest = () => {
   const [displayData, setDisplayData] = useState(data);
-  const [active, setActive] = useState("ALL");
+  const [active, setActive] = useState("الكل");
   const title = useRef(null);
   const filter = [
     "الكل",

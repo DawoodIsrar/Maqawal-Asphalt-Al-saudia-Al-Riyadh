@@ -198,7 +198,7 @@ const Reviews = () => {
               <div className={styles.carousel}>
                 <div ref={main}></div>
                 <div ref={slide2}>
-                  <div data-name = 'Victor Nwigberi,Construction worker' data-src="tm2.jpeg">
+                  <div data-name = 'فيكتور نوجيبيري,عامل إنشاءات' data-src="tm2.jpeg">
                     <Image
                       src={test3}
                       objectFit="cover"
@@ -209,7 +209,7 @@ const Reviews = () => {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                  <div data-name='Ikenna Syks Ibe,Engineering lead' data-src="tm3.jpeg">
+                  <div data-name='إيكانا إيب,رئيس قسم الهندسة' data-src="tm3.jpeg">
                     <Image
                       src={test4}
                       objectFit="cover"
@@ -220,7 +220,7 @@ const Reviews = () => {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                  <div data-name='Norbert Odiaka,Civil eng.' data-src="tm4.jpeg">
+                  <div data-name='نوربرت أودياكا,مهندس مدني' data-src="tm4.jpeg">
                     <Image
                       src={test5}
                       objectFit="cover"
@@ -231,7 +231,7 @@ const Reviews = () => {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                  <div data-name='Obinna Adefihinti,Lead konst worker' data-src="tm5.jpeg">
+                  <div data-name='أوبينا أديفيهينتي,عامل بناء رئيسي' data-src="tm5.jpeg">
                     <Image
                       src={test6}
                       objectFit="cover"
@@ -242,7 +242,7 @@ const Reviews = () => {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                  <div data-name='Emeka Moses,Site worker' data-src="tm6.jpeg">
+                  <div data-name='إيميكا موسى,عامل موقع' data-src="tm6.jpeg">
                     <Image
                       src={test7}
                       objectFit="cover"

@@ -139,10 +139,11 @@ const Hero = () => {
                         },
                       },
                     }}
-                      style={{ float: "right", marginRight: "70px" }}
-                      className={styles.caption}
+                    
+                      className={`${styles.caption} ${index === 0 ? styles.left : styles.right}`}
+                      
                     >
-                      <h1>
+                      <h1 style={index === 1 ? { textAlign: "left" } : { textAlign: "right" } }>
                        والبناء المتين في الرياض والمملكة العربية السعودية  <br />  نُنفذ مشاريع الأسفلت
                       </h1>
                       <h2 className="text-center text-2xl md:text-4xl font-bold leading-snug">
@@ -192,7 +193,7 @@ const Hero = () => {
                       <p>
                        مهما كان موقع مشروعك أو نوعه، نُوفر لك الخبراء المناسبين لتحقيق أهدافك بثقة وقيمة مضافة
                       </p>
-                       <p className="mt-4 max-w-xl mx-auto">
+                       <p >
     Wherever your project is located or whatever its type, we provide the right experts to deliver results with confidence and added value.
   </p>
 

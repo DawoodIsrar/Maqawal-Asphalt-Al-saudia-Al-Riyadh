@@ -5,6 +5,7 @@ import icon1 from "../../public/images/1.png";
 import icon2 from "../../public/images/2.png";
 import icon3 from "../../public/images/3.png";
 import Image from "next/image";
+import ContactButtons from "../../components/Contactbuttons";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -81,15 +82,14 @@ const Contact = () => {
         <div>
           <div className="google-map-code">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.494718907741!2d46.67529581500263!3d24.713551984114854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038a4f1c7b6b%3A0x8dbf1145fd3c1c0e!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1711804726956"
-              width="100%"
-              height="550"
-              frameBorder="0"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              aria-hidden="false"
-              tabIndex="0"
-            ></iframe>
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.343374912782!2d46.711943975024816!3d24.611847455161293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f05840d15b241%3A0x13461b40195ad427!2s%D8%AD%D9%8A%2C%20RCCA2887%2C%202887%20Khaima%20Umm%20Muabad%2C%206798%2C%20Manfouhah%20Al%20Jadidah%2C%20Riyadh%2012653%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1754134115795!5m2!1sen!2sus"
+  width="100%"
+  height="550"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
           </div>
         </div>
         <div>
@@ -162,7 +162,7 @@ const Contact = () => {
           </div>
           <h2><strong>Office Address</strong></h2>
           <div>
-            <p>Ta-134/A, Gulshan Badda <br /> Link Rd, Dhaka</p>
+            <p>2887-2939 Khaima umm Muabad, <br /> Manfouhah Al Jadidah, Riyadh 12653</p>
           </div>
         </div>
         <div>
@@ -206,6 +206,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ContactButtons/>
     </div>
   );
 };

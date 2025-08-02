@@ -29,6 +29,8 @@
     line-height: 1.2;
     font-weight: 550;
 }
+.left  { float: left  }
+.right { float: right }
 .caption p {
     font-weight: 100;
     margin-top: 40px;
@@ -47,23 +49,28 @@
     }
 }
 @media screen and (max-width:540px) {
-    .caption {
-        width:85%;
-        margin-top: 60px;
-    }
     .sect {
         /* height: 500px !important; */
         background-position: bottom;
     }
-    .caption:nth-child(2) {
-        margin-right: 10px !important;
-        float: left !important;
-    }
+    .caption {      /* what both slides share on small screens */
+    width: 85%;
+    margin-top: 60px;
+  }
+
+  .left  { float: left;  margin-left: 10px;  }
+  .right { float: right; margin-right: 10px; }
+  .caption button{
+    margin-block: 10px;
+  }
+  .caption p{
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width:510px) {
     .caption {
         width:60%;
-        margin-left: 40px;
+        margin-left: 80px;
     }
     .caption h1 {
         font-size: 35px;
@@ -74,7 +81,8 @@
 }
 @media screen and (max-width:510px) {
     .caption {
-        width: 82%;
+        width: 60%;
+
     }
 }
 @media screen and (max-width:375px) {
@@ -84,4 +92,21 @@
     .caption {
         margin-left: 25px;
     }
+}
+
+.responsive-text-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
+  .responsive-text-wrapper {
+    justify-content: center;
+  }
+
+  .responsive-text-wrapper p {
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+  }
 }
