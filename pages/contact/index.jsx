@@ -5,7 +5,7 @@ import icon1 from "../../public/images/1.png";
 import icon2 from "../../public/images/2.png";
 import icon3 from "../../public/images/3.png";
 import Image from "next/image";
-import ContactButtons from "../components/Contactbuttons";
+import ContactButtons from '../components/Contactbuttons/index.jsx'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
